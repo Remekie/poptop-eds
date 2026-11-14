@@ -1,0 +1,217 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/blocks",
+    "writtenAt": "2026-11-14T22:42:58.550Z",
+    "readArtifacts": [
+      "stardust\\rollout\\coverage\\pages.json"
+    ],
+    "stardustVersion": "0.38.6"
+  },
+  "generatedAt": "2026-11-14T22:42:58.550Z",
+  "blocks": [
+    {
+      "id": "cards",
+      "label": "cards",
+      "kind": "module",
+      "signature": "module:cards",
+      "source": null,
+      "usedByTemplates": [],
+      "usedByPages": [
+        "about",
+        "home",
+        "inspiration",
+        "partners"
+      ],
+      "instanceCount": 4,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "cards",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "columns",
+      "label": "columns",
+      "kind": "module",
+      "signature": "module:columns",
+      "source": null,
+      "usedByTemplates": [],
+      "usedByPages": [
+        "about",
+        "contact"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "columns",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "cta",
+      "label": "cta",
+      "kind": "module",
+      "signature": "module:cta",
+      "source": null,
+      "usedByTemplates": [],
+      "usedByPages": [
+        "about",
+        "faq",
+        "home",
+        "inspiration",
+        "partners"
+      ],
+      "instanceCount": 5,
+      "delivery": {
+        "status": "converted",
+        "edsBlockName": "default-content",
+        "blockPath": null,
+        "convertedAt": "2026-11-14T22:42:42.940Z"
+      }
+    },
+    {
+      "id": "faq",
+      "label": "faq",
+      "kind": "module",
+      "signature": "module:faq",
+      "source": null,
+      "usedByTemplates": [],
+      "usedByPages": [
+        "faq"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "converted",
+        "edsBlockName": "default-content",
+        "blockPath": null,
+        "convertedAt": "2026-11-14T22:42:43.111Z"
+      }
+    },
+    {
+      "id": "footer",
+      "label": "footer",
+      "kind": "chrome",
+      "signature": "chrome:footer",
+      "source": null,
+      "usedByTemplates": [],
+      "usedByPages": [
+        "about",
+        "contact",
+        "faq",
+        "home",
+        "inspiration",
+        "partners"
+      ],
+      "instanceCount": 6,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": null,
+        "blockPath": "fragments/footer.html",
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "form",
+      "label": "form",
+      "kind": "module",
+      "signature": "module:form",
+      "source": null,
+      "usedByTemplates": [],
+      "usedByPages": [
+        "contact",
+        "home"
+      ],
+      "instanceCount": 2,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "form",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "header",
+      "label": "header",
+      "kind": "chrome",
+      "signature": "chrome:header",
+      "source": null,
+      "usedByTemplates": [],
+      "usedByPages": [
+        "about",
+        "contact",
+        "faq",
+        "home",
+        "inspiration",
+        "partners"
+      ],
+      "instanceCount": 6,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": null,
+        "blockPath": "fragments/header.html",
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "hero",
+      "label": "hero",
+      "kind": "module",
+      "signature": "module:hero",
+      "source": null,
+      "usedByTemplates": [],
+      "usedByPages": [
+        "about",
+        "contact",
+        "faq",
+        "home",
+        "inspiration",
+        "partners"
+      ],
+      "instanceCount": 6,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "hero",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "quote",
+      "label": "quote",
+      "kind": "module",
+      "signature": "module:quote",
+      "source": null,
+      "usedByTemplates": [],
+      "usedByPages": [
+        "about"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "quote",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "video",
+      "label": "video",
+      "kind": "module",
+      "signature": "module:video",
+      "source": null,
+      "usedByTemplates": [],
+      "usedByPages": [
+        "inspiration"
+      ],
+      "instanceCount": 1,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "video",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    }
+  ]
+}

@@ -15,13 +15,19 @@
     {
       "type": "metadata-override",
       "note": "nav href /s-projects-side-by-side → /inspiration (clean slug)"
+    },
+    {
+      "type": "block-consolidation",
+      "note": "EDS best practice: shared hero/cards/columns with variants; cta+faq as default content"
     }
   ],
   "canonShas": {},
   "modules": [
+    "header",
     "hero",
-    "events",
-    "how-it-works",
-    "closing-cta"
+    "cards",
+    "form",
+    "cta",
+    "footer"
   ]
 }

@@ -1,13 +1,13 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-11-14T22:35:37.542Z",
+    "writtenAt": "2026-11-14T22:42:58.421Z",
     "readArtifacts": [
       "stardust/migrated"
     ],
     "stardustVersion": "0.38.6"
   },
-  "generatedAt": "2026-11-14T22:35:37.542Z",
+  "generatedAt": "2026-11-14T22:42:58.421Z",
   "templates": [
     {
       "id": "untyped",
@@ -22,23 +22,16 @@
       ],
       "pageCount": 6,
       "blocks": [
-        "about-hero",
-        "booking",
-        "closing-cta",
-        "contact-form",
-        "contact-hero",
-        "event-gallery",
-        "events",
-        "events-we-serve",
+        "cards",
+        "columns",
+        "cta",
         "faq",
+        "footer",
+        "form",
+        "header",
         "hero",
-        "how-it-works",
-        "inspiration-hero",
-        "origin",
-        "partners",
-        "process-video",
-        "review",
-        "services"
+        "quote",
+        "video"
       ],
       "delivery": {
         "verified": 0,

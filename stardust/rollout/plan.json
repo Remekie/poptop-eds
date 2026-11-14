@@ -1,0 +1,198 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/plan",
+    "writtenAt": "2026-11-14T22:42:58.708Z",
+    "readArtifacts": [
+      "stardust\\rollout\\coverage"
+    ],
+    "stardustVersion": "0.38.6"
+  },
+  "generatedAt": "2026-11-14T22:42:58.708Z",
+  "fragments": [
+    {
+      "id": "footer",
+      "blockPath": "fragments/footer.html",
+      "status": "pending"
+    },
+    {
+      "id": "header",
+      "blockPath": "fragments/header.html",
+      "status": "pending"
+    }
+  ],
+  "deliveryOrder": [
+    "about",
+    "contact",
+    "faq",
+    "home",
+    "inspiration",
+    "partners"
+  ],
+  "steps": [
+    {
+      "slug": "about",
+      "path": "/about\\index",
+      "templateId": null,
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "hero",
+          "edsBlockName": "hero"
+        },
+        {
+          "id": "columns",
+          "edsBlockName": "columns"
+        },
+        {
+          "id": "cards",
+          "edsBlockName": "cards"
+        },
+        {
+          "id": "quote",
+          "edsBlockName": "quote"
+        },
+        {
+          "id": "cta",
+          "edsBlockName": "default-content"
+        }
+      ],
+      "reuse": []
+    },
+    {
+      "slug": "contact",
+      "path": "/contact\\index",
+      "templateId": null,
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "form",
+          "edsBlockName": "form"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about"
+        },
+        {
+          "id": "columns",
+          "edsBlockName": "columns",
+          "convertedBy": "about"
+        }
+      ]
+    },
+    {
+      "slug": "faq",
+      "path": "/faq\\index",
+      "templateId": null,
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "faq",
+          "edsBlockName": "default-content"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about"
+        },
+        {
+          "id": "cta",
+          "edsBlockName": "default-content",
+          "convertedBy": "about"
+        }
+      ]
+    },
+    {
+      "slug": "home",
+      "path": "/",
+      "templateId": null,
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about"
+        },
+        {
+          "id": "cards",
+          "edsBlockName": "cards",
+          "convertedBy": "about"
+        },
+        {
+          "id": "form",
+          "edsBlockName": "form",
+          "convertedBy": "contact"
+        },
+        {
+          "id": "cta",
+          "edsBlockName": "default-content",
+          "convertedBy": "about"
+        }
+      ]
+    },
+    {
+      "slug": "inspiration",
+      "path": "/inspiration\\index",
+      "templateId": null,
+      "status": "pending",
+      "isRepresentative": true,
+      "convert": [
+        {
+          "id": "video",
+          "edsBlockName": "video"
+        }
+      ],
+      "reuse": [
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about"
+        },
+        {
+          "id": "cards",
+          "edsBlockName": "cards",
+          "convertedBy": "about"
+        },
+        {
+          "id": "cta",
+          "edsBlockName": "default-content",
+          "convertedBy": "about"
+        }
+      ]
+    },
+    {
+      "slug": "partners",
+      "path": "/partners\\index",
+      "templateId": null,
+      "status": "pending",
+      "isRepresentative": false,
+      "convert": [],
+      "reuse": [
+        {
+          "id": "hero",
+          "edsBlockName": "hero",
+          "convertedBy": "about"
+        },
+        {
+          "id": "cards",
+          "edsBlockName": "cards",
+          "convertedBy": "about"
+        },
+        {
+          "id": "cta",
+          "edsBlockName": "default-content",
+          "convertedBy": "about"
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-11-14T22:35:37.542Z",
+    "writtenAt": "2026-11-14T22:42:58.421Z",
     "stardustVersion": "0.38.6"
   },
   "target": "aem-eds",
@@ -16,7 +16,7 @@
   },
   "scope": null,
   "lastRun": {
-    "at": "2026-11-14T22:35:37.542Z",
+    "at": "2026-11-14T22:42:58.421Z",
     "pages": {
       "total": 6,
       "verified": 0,
@@ -27,9 +27,9 @@
       "failed": 0
     },
     "blocks": {
-      "total": 0,
-      "converted": 0,
-      "pending": 0
+      "total": 10,
+      "converted": 2,
+      "pending": 8
     },
     "verifyFailures": 0
   }

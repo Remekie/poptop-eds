@@ -5,10 +5,18 @@
     {
       "type": "sidecar-added",
       "note": "missing in source; added for rollout"
+    },
+    {
+      "type": "block-consolidation",
+      "note": "EDS best practice: shared hero/cards/columns with variants; cta+faq as default content"
     }
   ],
   "canonShas": {},
   "modules": [
-    "partners"
+    "header",
+    "hero",
+    "cards",
+    "cta",
+    "footer"
   ]
 }

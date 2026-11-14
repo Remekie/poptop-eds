@@ -1,13 +1,13 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-11-14T22:35:37.542Z",
+    "writtenAt": "2026-11-14T22:42:58.421Z",
     "readArtifacts": [
       "stardust/migrated"
     ],
     "stardustVersion": "0.38.6"
   },
-  "generatedAt": "2026-11-14T22:35:37.542Z",
+  "generatedAt": "2026-11-14T22:42:58.421Z",
   "pages": [
     {
       "slug": "about",
@@ -21,12 +21,13 @@
         "sourceUrl": null
       },
       "blocks": [
-        "about-hero",
-        "origin",
-        "services",
-        "events-we-serve",
-        "review",
-        "booking"
+        "header",
+        "hero",
+        "columns",
+        "cards",
+        "quote",
+        "cta",
+        "footer"
       ],
       "widgets": [],
       "delivery": {
@@ -49,8 +50,11 @@
         "sourceUrl": null
       },
       "blocks": [
-        "contact-hero",
-        "contact-form"
+        "header",
+        "hero",
+        "columns",
+        "form",
+        "footer"
       ],
       "widgets": [],
       "delivery": {
@@ -73,7 +77,11 @@
         "sourceUrl": null
       },
       "blocks": [
-        "faq"
+        "header",
+        "hero",
+        "faq",
+        "cta",
+        "footer"
       ],
       "widgets": [],
       "delivery": {
@@ -96,10 +104,12 @@
         "sourceUrl": null
       },
       "blocks": [
+        "header",
         "hero",
-        "events",
-        "how-it-works",
-        "closing-cta"
+        "cards",
+        "form",
+        "cta",
+        "footer"
       ],
       "widgets": [],
       "delivery": {
@@ -122,10 +132,12 @@
         "sourceUrl": null
       },
       "blocks": [
-        "inspiration-hero",
-        "event-gallery",
-        "process-video",
-        "booking"
+        "header",
+        "hero",
+        "cards",
+        "video",
+        "cta",
+        "footer"
       ],
       "widgets": [],
       "delivery": {
@@ -148,7 +160,11 @@
         "sourceUrl": null
       },
       "blocks": [
-        "partners"
+        "header",
+        "hero",
+        "cards",
+        "cta",
+        "footer"
       ],
       "widgets": [],
       "delivery": {

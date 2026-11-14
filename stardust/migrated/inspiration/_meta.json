@@ -15,13 +15,19 @@
     {
       "type": "metadata-override",
       "note": "slug remapped from /s-projects-side-by-side to /inspiration"
+    },
+    {
+      "type": "block-consolidation",
+      "note": "EDS best practice: shared hero/cards/columns with variants; cta+faq as default content"
     }
   ],
   "canonShas": {},
   "modules": [
-    "inspiration-hero",
-    "event-gallery",
-    "process-video",
-    "booking"
+    "header",
+    "hero",
+    "cards",
+    "video",
+    "cta",
+    "footer"
   ]
 }
