@@ -7,7 +7,7 @@
     ],
     "stardustVersion": "0.38.6"
   },
-  "generatedAt": "2026-11-14T22:50:48.895Z",
+  "generatedAt": "2026-11-14T23:10:17.812Z",
   "templates": [
     {
       "id": "untyped",
@@ -36,9 +36,9 @@
       ],
       "delivery": {
         "verified": 0,
-        "deployed": 0,
+        "deployed": 1,
         "contentPending": 0,
-        "pending": 6
+        "pending": 5
       }
     }
   ]

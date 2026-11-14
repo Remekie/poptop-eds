@@ -29,8 +29,8 @@
   "/about/index": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-11-14T23:05:02.297Z",
-    "put": 201,
+    "ts": "2026-11-14T23:08:22.049Z",
+    "put": 200,
     "preview": 200,
     "live": 200,
     "verify": "ok"
