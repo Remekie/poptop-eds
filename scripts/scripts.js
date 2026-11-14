@@ -74,6 +74,19 @@ function buildWidgetAutoBlocks(main) {
 }
 
 /**
+ * Turns an `.mp4` link alone in its paragraph into a video block (D1: authors paste the link).
+ * @param {Element} main The container element
+ */
+function buildVideoAutoBlocks(main) {
+  main.querySelectorAll('a[href$=".mp4"]').forEach((link) => {
+    if (link.closest('.video')) return;
+    const p = link.closest('p');
+    if (!p || p.querySelectorAll('a').length !== 1 || p.textContent.trim() !== link.textContent.trim()) return;
+    p.replaceWith(buildBlock('video', { elems: [link] }));
+  });
+}
+
+/**
  * Builds all synthetic blocks in a container element.
  * @param {Element} main The container element
  */
@@ -97,6 +110,7 @@ function buildAutoBlocks(main) {
       });
     }
     buildWidgetAutoBlocks(main);
+    buildVideoAutoBlocks(main);
   } catch (error) {
     // eslint-disable-next-line no-console
     console.error('Auto Blocking failed', error);

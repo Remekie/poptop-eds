@@ -118,7 +118,8 @@ body.appear {
   display: block;
 }
 
-body.home {
+body.home,
+body.dark {
   --background-color: var(--color-can);
   --text-color: var(--color-label);
 }
@@ -458,27 +459,166 @@ main .section.list li::before {
   }
 }
 
-/* section metadata: faq (question / answer pairs) */
-main .section.faq .default-content-wrapper {
+/* section metadata: tagline (home band under the hero) */
+main .section.tagline {
+  padding: 32px 24px;
+  background: var(--color-can);
+  text-align: center;
+}
+
+main .section.tagline p {
+  margin: 0;
+  font-family: var(--heading-font-family);
+  font-size: clamp(20px, 2.5vw, 28px);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: var(--color-label);
+}
+
+/* section metadata: marquee (home orange strip; decorative scroll) */
+main .section.marquee {
+  padding: 14px 0;
+  overflow: hidden;
+  background: var(--color-pour);
+}
+
+main .section.marquee > div {
+  max-width: none;
+  padding: 0;
+}
+
+main .section.marquee p {
+  display: inline-block;
+  margin: 0;
+  padding-left: 100%;
+  white-space: nowrap;
+  font-family: var(--heading-font-family);
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-label);
+  animation: marquee 18s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  main .section.marquee p {
+    padding-left: var(--gutter);
+    animation: none;
+  }
+}
+
+/* section metadata: cta-split (home closing: photo beside copy + form) */
+main .section.cta-split {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 48px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr repeat(4, auto) 1fr;
+  min-height: 600px;
+  padding: 0;
+  background: #111;
+  color: var(--color-label);
 }
 
-main .section.faq .default-content-wrapper :is(h2, .eyebrow) {
-  grid-column: 1 / -1;
+main .section.cta-split > div {
+  display: contents;
 }
 
-main .section.faq h3 {
-  margin-top: 32px;
-  padding-top: 24px;
-  border-top: 1px solid var(--color-rim);
-  font-size: var(--heading-md);
+main .section.cta-split > div > * {
+  grid-column: 2;
+  max-width: 100%;
+  margin-inline: 56px;
 }
 
-@media (width <= 768px) {
-  main .section.faq .default-content-wrapper {
+main .section.cta-split p:has(picture) {
+  position: relative;
+  grid-row: 1 / -1;
+  grid-column: 1;
+  min-height: 500px;
+  margin: 0;
+  overflow: hidden;
+}
+
+main .section.cta-split p:has(picture) picture,
+main .section.cta-split p:has(picture) img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* the badge: bold text authored in the photo's paragraph */
+main .section.cta-split p:has(picture) strong {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  padding: 10px 20px;
+  background: var(--color-pour);
+  font-family: var(--heading-font-family);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+main .section.cta-split p:has(+ h2) {
+  grid-row: 2;
+  margin-bottom: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-pour);
+}
+
+main .section.cta-split h2 {
+  grid-row: 3;
+  margin-bottom: 20px;
+  font-size: clamp(28px, 3vw, 48px);
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--color-label);
+}
+
+main .section.cta-split h2 + p {
+  grid-row: 4;
+  max-width: 420px;
+  margin-bottom: 40px;
+  font-size: 15px;
+  line-height: 1.65;
+  color: rgb(252 252 252 / 65%);
+}
+
+main .section.cta-split .form {
+  grid-row: 5;
+  margin-bottom: 64px;
+}
+
+@media (width <= 900px) {
+  main .section.cta-split {
     grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+
+  main .section.cta-split > div > * {
+    grid-column: 1;
+    margin-inline: 24px;
+  }
+
+  main .section.cta-split p:has(picture) {
+    grid-row: auto;
+    min-height: 340px;
+    margin: 0 0 48px;
+  }
+
+  main .section.cta-split :is(p:has(+ h2), h2, h2 + p, .form) {
+    grid-row: auto;
   }
 }
 

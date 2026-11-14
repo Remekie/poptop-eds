@@ -147,5 +147,53 @@
       "preview",
       "live"
     ]
+  },
+  "media/poptop/home-weddings.jpg": {
+    "status": "uploaded",
+    "file": "stardust/migrated/assets/images/wix/home-weddings.jpg",
+    "size": 78011,
+    "sha256": "1b5c8b90a9cc5119c1d73793e8be3f8f7345f57fb200966e54bf8d5f0937953c",
+    "contentType": "image/jpeg",
+    "source": null,
+    "contentUrl": "https://content.da.live/remekie/poptop-eds/media/poptop/home-weddings.jpg",
+    "httpStatus": 201,
+    "attempts": 1,
+    "ts": "2026-11-14T23:22:44.952Z"
+  },
+  "media/poptop/home-corporate.jpg": {
+    "status": "uploaded",
+    "file": "stardust/migrated/assets/images/wix/home-corporate.jpg",
+    "size": 50382,
+    "sha256": "cf36b88784422eeb87d654cbe01f8267f3619336eaaad6367b2877b11c63acec",
+    "contentType": "image/jpeg",
+    "source": null,
+    "contentUrl": "https://content.da.live/remekie/poptop-eds/media/poptop/home-corporate.jpg",
+    "httpStatus": 201,
+    "attempts": 1,
+    "ts": "2026-11-14T23:22:45.562Z"
+  },
+  "media/poptop/home-mocktails.png": {
+    "status": "uploaded",
+    "file": "stardust/migrated/assets/images/wix/home-mocktails.png",
+    "size": 802204,
+    "sha256": "53ee4165f60b95a27e8968f968cbde7a6ccedd17d49819f3ea364197f2d2c4c7",
+    "contentType": "image/png",
+    "source": null,
+    "contentUrl": "https://content.da.live/remekie/poptop-eds/media/poptop/home-mocktails.png",
+    "httpStatus": 201,
+    "attempts": 1,
+    "ts": "2026-11-14T23:22:45.699Z"
+  },
+  "media/poptop/home-recipe.png": {
+    "status": "uploaded",
+    "file": "stardust/migrated/assets/images/wix/home-recipe.png",
+    "size": 1016426,
+    "sha256": "d810f51885445f3488a0eb0cdf0eba3401c3d89f96c5a5d59c2e41c571b973cd",
+    "contentType": "image/png",
+    "source": null,
+    "contentUrl": "https://content.da.live/remekie/poptop-eds/media/poptop/home-recipe.png",
+    "httpStatus": 201,
+    "attempts": 1,
+    "ts": "2026-11-14T23:22:45.729Z"
   }
 }

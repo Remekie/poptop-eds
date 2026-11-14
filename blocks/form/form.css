@@ -1,0 +1,310 @@
+/* source: contact inline § booking form */
+.form .form-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+}
+
+.form .form-field {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 24px;
+  background: #0f0f0f;
+}
+
+.form .form-field-full {
+  grid-column: 1 / -1;
+}
+
+.form label {
+  margin-bottom: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgb(255 255 255 / 40%);
+}
+
+.form label p {
+  margin: 0;
+}
+
+.form :is(input, select, textarea) {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgb(255 255 255 / 15%);
+  border-radius: 0;
+  padding: 4px 0 10px;
+  background: transparent;
+  font-family: var(--body-font-family);
+  font-size: var(--body-sm);
+  color: #fff;
+  outline: none;
+  appearance: none;
+  transition: border-color 120ms;
+}
+
+.form :is(input, select, textarea):focus {
+  border-bottom-color: var(--color-pour);
+}
+
+.form :is(input, textarea)::placeholder {
+  color: rgb(255 255 255 / 25%);
+}
+
+.form select {
+  color: rgb(255 255 255 / 70%);
+  cursor: pointer;
+}
+
+.form select option {
+  background: #111;
+  color: #fff;
+}
+
+.form textarea {
+  min-height: 120px;
+  line-height: 1.6;
+  resize: none;
+}
+
+.form .form-submit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 2px;
+  padding: 28px 24px;
+  background: #0f0f0f;
+}
+
+.form .form-submit-note p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgb(255 255 255 / 35%);
+}
+
+.form .form-submit button.button {
+  flex-shrink: 0;
+  padding: 16px 36px;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+}
+
+.form .form-status:not(:empty) {
+  margin-bottom: 2px;
+  border-left: 3px solid #ff5050;
+  padding: 12px 16px;
+  background: rgb(255 80 80 / 10%);
+  font-size: 13px;
+  line-height: 1.5;
+  color: #ff8080;
+}
+
+.form .form-success {
+  display: none;
+  min-height: 400px;
+  padding: 80px 40px;
+  background: #000;
+  text-align: center;
+  outline: none;
+}
+
+.form .form-success::before {
+  content: '★';
+  display: block;
+  margin-bottom: 24px;
+  font-size: 40px;
+  color: var(--color-pour);
+}
+
+.form .form-success :is(h2, h3) {
+  margin-bottom: 16px;
+  font-size: var(--heading-xl);
+  letter-spacing: -0.025em;
+  color: #fcfcfc;
+}
+
+.form .form-success p {
+  max-width: 360px;
+  margin: 0 auto 40px;
+  font-size: var(--body-sm);
+  line-height: 1.7;
+  color: rgb(252 252 252 / 65%);
+}
+
+.form.form-sent form {
+  display: none;
+}
+
+.form.form-sent .form-success {
+  display: block;
+}
+
+/* compact (home closing section): stacked boxed fields, labels kept for screen readers */
+.form.compact .form-fields {
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.form.compact .form-field {
+  padding: 0;
+  background: none;
+}
+
+.form.compact label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.form.compact :is(input, select, textarea) {
+  border: 1px solid rgb(255 255 255 / 12%);
+  padding: 16px 20px;
+  background: rgb(255 255 255 / 6%);
+  font-size: 15px;
+  color: var(--color-label);
+  transition: border-color 150ms;
+}
+
+.form.compact :is(input, select, textarea):focus {
+  border-color: var(--color-pour);
+}
+
+.form.compact :is(input, textarea)::placeholder {
+  color: rgb(252 252 252 / 35%);
+}
+
+.form.compact textarea {
+  min-height: 0;
+  resize: vertical;
+}
+
+.form.compact .form-submit {
+  display: block;
+  margin-top: 24px;
+  padding: 0;
+  background: none;
+}
+
+.form.compact .form-submit button.button {
+  width: 100%;
+  padding: 18px 40px;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.form.compact .form-success {
+  min-height: 0;
+  padding: 32px 0 16px;
+  background: none;
+  text-align: left;
+}
+
+.form.compact .form-success::before {
+  content: none;
+}
+
+.form.compact .form-success p {
+  margin: 0;
+}
+
+@media (width <= 640px) {
+  .form .form-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .form .form-submit {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form .form-success {
+    padding: 56px 24px;
+  }
+}
+
+/* contact: info (default content) beside the form */
+main .section.form-container:not(.cta-split) {
+  background: var(--color-can);
+  color: var(--color-label);
+}
+
+@media (width >= 961px) {
+  main .section.form-container:not(.cta-split) {
+    display: grid;
+    grid-template-columns: 340px minmax(0, 1fr);
+    align-items: start;
+    column-gap: 80px;
+    padding-inline: max(var(--gutter), calc((100% - var(--max-width)) / 2 + var(--gutter)));
+  }
+
+  main .section.form-container:not(.cta-split) > div {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+main .section.form-container .default-content-wrapper h2 {
+  margin-bottom: 40px;
+  font-size: var(--heading-xl);
+  letter-spacing: -0.025em;
+  color: var(--color-label);
+}
+
+main .section.form-container .default-content-wrapper h2 em {
+  font-style: normal;
+  color: var(--color-pour);
+}
+
+main .section.form-container .default-content-wrapper h3 {
+  margin: 32px 0 6px;
+  font-family: var(--body-font-family);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-pour);
+}
+
+main .section.form-container .default-content-wrapper p {
+  margin: 0;
+  font-size: var(--body-sm);
+  line-height: 1.6;
+  color: rgb(252 252 252 / 80%);
+}
+
+main .section.form-container .default-content-wrapper p a:any-link {
+  color: inherit;
+}
+
+/* the promise: a paragraph led by bold text */
+main .section.form-container .default-content-wrapper p:has(> strong) {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid rgb(255 255 255 / 10%);
+  color: rgb(255 255 255 / 50%);
+}
+
+main .section.form-container .default-content-wrapper p > strong {
+  display: block;
+  margin-bottom: 8px;
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-md);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  color: var(--color-label);
+}
+
+@media (width <= 960px) {
+  main .section.form-container .default-content-wrapper {
+    margin-bottom: 56px;
+  }
+}

@@ -1,5 +1,6 @@
 /**
- * cards — block-collection cards: one row per card, cells = [image?] [body].
+ * cards — block-collection cards: one row per card, cells = [image?] [body] [overlay?].
+ * An overlay cell (text shown over the image on hover) is MOVED into the image box.
  * The authored picture is kept as-is (the pipeline already emits a responsive picture;
  * replacing it would drop its editor index, EW1). Paragraphs before the card heading are
  * MOVED into an eyebrow wrapper.
@@ -27,12 +28,20 @@ export default function decorate(block) {
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
     while (row.firstElementChild) li.append(row.firstElementChild);
+    let image;
+    let body;
     [...li.children].forEach((div) => {
       if (div.children.length === 1 && div.querySelector('picture')) {
         div.className = 'cards-card-image';
-      } else {
+        image = div;
+      } else if (!body && (div.querySelector('h2, h3, h4') || !image)) {
         div.className = 'cards-card-body';
         wrapEyebrow(div);
+        body = div;
+      } else {
+        // extra text cell: hover overlay on the image (image variant)
+        div.className = 'cards-card-overlay';
+        if (image) image.append(div);
       }
     });
     ul.append(li);
