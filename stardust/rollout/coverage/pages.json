@@ -1,0 +1,163 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:rollout/inventory",
+    "writtenAt": "2026-11-14T22:35:37.542Z",
+    "readArtifacts": [
+      "stardust/migrated"
+    ],
+    "stardustVersion": "0.38.6"
+  },
+  "generatedAt": "2026-11-14T22:35:37.542Z",
+  "pages": [
+    {
+      "slug": "about",
+      "path": "/about\\index",
+      "title": "about",
+      "templateId": null,
+      "source": {
+        "migratedHtml": "stardust\\migrated\\about\\index.html",
+        "metaJson": "stardust\\migrated\\about\\_meta.json",
+        "sourceHash": "sha256:647d7b79a328a5f07daf1e71dc41ba3c472d2a7ddfe53ceb8af7d101e6d48af9",
+        "sourceUrl": null
+      },
+      "blocks": [
+        "about-hero",
+        "origin",
+        "services",
+        "events-we-serve",
+        "review",
+        "booking"
+      ],
+      "widgets": [],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "contact",
+      "path": "/contact\\index",
+      "title": "contact",
+      "templateId": null,
+      "source": {
+        "migratedHtml": "stardust\\migrated\\contact\\index.html",
+        "metaJson": "stardust\\migrated\\contact\\_meta.json",
+        "sourceHash": "sha256:39fafaf3882d8f2e4426c1c5ad31a26edf5b8b9000c3ad7a06ab43d1b11e9306",
+        "sourceUrl": null
+      },
+      "blocks": [
+        "contact-hero",
+        "contact-form"
+      ],
+      "widgets": [],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "faq",
+      "path": "/faq\\index",
+      "title": "faq",
+      "templateId": null,
+      "source": {
+        "migratedHtml": "stardust\\migrated\\faq\\index.html",
+        "metaJson": "stardust\\migrated\\faq\\_meta.json",
+        "sourceHash": "sha256:5c4ea964ad314673eac9e8388198170f9beef1485327a0baa0e535eaa1c9692d",
+        "sourceUrl": null
+      },
+      "blocks": [
+        "faq"
+      ],
+      "widgets": [],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "home",
+      "path": "/",
+      "title": "home",
+      "templateId": null,
+      "source": {
+        "migratedHtml": "stardust\\migrated\\index.html",
+        "metaJson": "stardust\\migrated\\_meta.json",
+        "sourceHash": "sha256:e2529097344cef38ca2fe4885bb0bb305e605efd69f56cb41e5ba75bfc47da3c",
+        "sourceUrl": null
+      },
+      "blocks": [
+        "hero",
+        "events",
+        "how-it-works",
+        "closing-cta"
+      ],
+      "widgets": [],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "inspiration",
+      "path": "/inspiration\\index",
+      "title": "inspiration",
+      "templateId": null,
+      "source": {
+        "migratedHtml": "stardust\\migrated\\inspiration\\index.html",
+        "metaJson": "stardust\\migrated\\inspiration\\_meta.json",
+        "sourceHash": "sha256:ff816b57ac67635585eaef3fff95fa1e670ad28c6123a841e8a4c46dca743c8d",
+        "sourceUrl": null
+      },
+      "blocks": [
+        "inspiration-hero",
+        "event-gallery",
+        "process-video",
+        "booking"
+      ],
+      "widgets": [],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    },
+    {
+      "slug": "partners",
+      "path": "/partners\\index",
+      "title": "partners",
+      "templateId": null,
+      "source": {
+        "migratedHtml": "stardust\\migrated\\partners\\index.html",
+        "metaJson": "stardust\\migrated\\partners\\_meta.json",
+        "sourceHash": "sha256:7cdf8ef7532489847bc8cdf08d466a65f7e8b6cd01ee48928dba98b3fa79cbd1",
+        "sourceUrl": null
+      },
+      "blocks": [
+        "partners"
+      ],
+      "widgets": [],
+      "delivery": {
+        "status": "pending",
+        "deployedUrl": null,
+        "deployedAt": null,
+        "verifiedAt": null,
+        "error": null
+      }
+    }
+  ]
+}

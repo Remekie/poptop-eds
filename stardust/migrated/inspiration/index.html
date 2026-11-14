@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<!-- stardust:provenance
+  writtenBy:        stardust:migrate
+  writtenAt:        2026-05-17T03:30:00Z
+  iteration:        5 (corrected to 4 real event categories from site content)
+  againstDirection: stardust/direction.md
+  variant:          A
+  stardustVersion:  0.2.0
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Edmonton's mobile canning bar for weddings, corporate events, and birthdays. See custom cocktail cans, mocktails, and branded event drinks. Every can is completely custom.">
+<title>Custom Canned Cocktails for Weddings & Events — Edmonton | Poptop Cocktails</title>
+
+<link rel="canonical" href="https://www.poptopcocktails.ca/inspiration/">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Poptop Cocktails">
+<meta name="theme-color" content="#000000">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Poptop Cocktails">
+<meta property="og:url" content="https://www.poptopcocktails.ca/inspiration/">
+<meta property="og:title" content="Custom Canned Cocktails for Weddings & Events — Edmonton | Poptop Cocktails">
+<meta property="og:description" content="Edmonton's mobile canning bar. His & Hers wedding cocktails, custom recipes, mocktails, corporate event drinks. Every can is completely custom.">
+<meta property="og:image" content="https://www.poptopcocktails.ca/assets/images/can-his-hers.png">
+<meta property="og:locale" content="en_CA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@poptop.inc">
+<meta name="twitter:title" content="Custom Canned Cocktails for Weddings & Events — Edmonton | Poptop">
+<meta name="twitter:description" content="Edmonton's mobile canning bar — His & Hers wedding cocktails, custom recipes, mocktails, corporate events. Every can tells a story.">
+<meta name="twitter:image" content="https://www.poptopcocktails.ca/assets/images/can-his-hers.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["LocalBusiness", "FoodEstablishment"],
+      "@id": "https://www.poptopcocktails.ca/#business",
+      "name": "Poptop Cocktails",
+      "alternateName": "Poptop Inc",
+      "description": "Custom canned cocktails and mocktails for weddings, corporate events, birthdays, baby showers, and brand collabs. Edmonton-based, open to travel & opportunities everywhere.",
+      "url": "https://www.poptopcocktails.ca",
+      "logo": { "@type": "ImageObject", "url": "/assets/images/logo.png" },
+      "areaServed": [
+        {"@type": "City", "name": "Edmonton", "containedIn": {"@type": "AdministrativeArea", "name": "Alberta"}},
+        {"@type": "City", "name": "Calgary", "containedIn": {"@type": "AdministrativeArea", "name": "Alberta"}}
+      ],
+      "sameAs": ["https://www.instagram.com/poptop.inc"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.poptopcocktails.ca/#website",
+      "url": "https://www.poptopcocktails.ca",
+      "name": "Poptop Cocktails",
+      "publisher": {"@id": "https://www.poptopcocktails.ca/#business"},
+      "inLanguage": "en-CA"
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://www.poptopcocktails.ca/inspiration/#webpage",
+      "url": "https://www.poptopcocktails.ca/inspiration/",
+      "name": "Our Work — Poptop Cocktails",
+      "description": "His & Hers cocktails, your recipe our can, mocktails, and corporate events. Every can is completely custom.",
+      "isPartOf": {"@id": "https://www.poptopcocktails.ca/#website"},
+      "about": {"@id": "https://www.poptopcocktails.ca/#business"},
+      "speakable": {"@type": "SpeakableSpecification", "cssSelector": [".hero-headline", ".events-heading", ".event-card-title", ".event-card-text"]},
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.poptopcocktails.ca/"},
+          {"@type": "ListItem", "position": 2, "name": "Our Work", "item": "https://www.poptopcocktails.ca/inspiration/"}
+        ]
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="/assets/images/can-his-hers.png" as="image" fetchpriority="high">
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<style>
+/* ── Page: Inspiration ─────────────────────────── */
+
+/* ── Events grid ─────────────────────────────── */
+.events {
+  padding: var(--section-padding) 0 0;
+  background: var(--color-label);
+  border-top: 1px solid var(--color-rim);
+}
+.events-header {
+  max-width: var(--max-width);
+  margin: 0 auto 40px;
+  padding: 0 40px;
+  text-align: center;
+}
+.events-heading {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-lg);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  color: var(--color-can);
+}
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  width: 100%;
+}
+.event-card {
+  border-right: 1px solid var(--color-rim);
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+.event-card:last-child { border-right: none; }
+.event-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: var(--color-pour);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.event-card:hover { box-shadow: inset 0 0 0 1px rgba(232,64,28,0.25); }
+.event-card:hover::after { transform: scaleX(1); }
+.event-card-img {
+  height: 820px;
+  background: var(--color-can);
+  position: relative;
+  overflow: hidden;
+}
+.event-card-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.event-card:hover .event-card-photo { transform: scale(1.05); }
+.event-card-overlay {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background: rgba(0,0,0,0.84);
+  padding: 28px 24px;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.event-card:hover .event-card-overlay { transform: translateY(0); opacity: 1; }
+.event-card-overlay-text {
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.92);
+}
+.event-card-body { padding: 28px 24px; }
+.event-card-eyebrow {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-pour);
+  margin-bottom: 12px;
+}
+.event-card-title {
+  font-family: var(--heading-font-family);
+  font-size: clamp(28px, 2.8vw, 40px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-can);
+  margin-bottom: 14px;
+  line-height: 1.05;
+}
+.event-card-text {
+  font-size: 19px;
+  color: var(--color-can);
+  opacity: 0.72;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .events-grid { grid-template-columns: repeat(2, 1fr); }
+  .event-card:nth-child(2) { border-right: none; }
+  .event-card-img { height: 560px; }
+}
+@media (max-width: 540px) {
+  .events-grid { grid-template-columns: 1fr; }
+  .event-card { border-right: none; border-bottom: 1px solid var(--color-rim); }
+  .event-card:last-child { border-bottom: none; }
+  .event-card-img { height: 480px; }
+}
+
+/* ── Booking CTA ──────────────────────────────── */
+.booking {
+  padding: 100px 0;
+  background: var(--color-can);
+  text-align: center;
+}
+.booking-star {
+  display: block;
+  font-size: 18px;
+  color: var(--color-pour);
+  letter-spacing: 10px;
+  margin-bottom: 32px;
+}
+.booking-heading {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-xl);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: var(--line-height-heading);
+  color: var(--color-label);
+  max-width: 560px;
+  margin: 0 auto 24px;
+}
+.booking-sub {
+  font-size: var(--body-sm);
+  color: rgba(255,255,255,0.50);
+  line-height: 1.7;
+  max-width: 400px;
+  margin: 0 auto 48px;
+}
+
+/* ── Process video ───────────────────────────── */
+.process {
+  background: var(--color-can);
+  padding: var(--section-padding) 0;
+}
+.process-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+.process-heading {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-xl);
+  font-weight: 800;
+  color: var(--color-label);
+  letter-spacing: -0.03em;
+  line-height: var(--line-height-heading);
+  margin-bottom: 32px;
+}
+.process-video-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #000;
+}
+.process-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+  .process-tagline {
+    margin-top: 24px;
+    font-family: var(--body-font-family);
+    font-size: var(--body-sm);
+    font-weight: 700;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    color: var(--color-rim);
+  }
+  .footer-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  .footer-links a {
+    font-size: 13px;
+    color: var(--color-rim);
+    opacity: 0.65;
+    transition: opacity 80ms;
+  }
+  .footer-links a:hover { opacity: 1; }
+
+  @media (max-width: 640px) {
+    .footer-inner { flex-direction: column; text-align: center; gap: 24px; }
+    .footer-links { justify-content: center; flex-wrap: wrap; }
+  }
+  </style>
+</head>
+
+<body data-template="listing">
+
+<!-- NAV -->
+<header data-nav-collapse="hamburger" data-canon>
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" aria-label="Poptop Cocktails home">
+      <img src="/assets/images/logo.png" alt="Poptop Cocktails" width="117" height="35">
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">
+    <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </label>
+    <ul class="nav-links" role="list">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/inspiration/" aria-current="page">Inspiration</a></li>
+      <li><a href="/partners/">Partners</a></li>
+      <li><a href="/faq/">FAQ</a></li>
+      <li><a href="/contact/">Contact</a></li>
+      <li><a href="/contact/" class="nav-book">Book</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" data-section="hero" data-intent="editorial hook" data-layout="full-bleed" data-media="image">
+  <div class="hero-visual" aria-hidden="true">
+    <img
+      class="hero-photo"
+      src="/assets/images/can-his-hers.png"
+      alt="Poptop Cocktails — His and Hers custom canned cocktails"
+      loading="eager" fetchpriority="high" width="328" height="441">
+  </div>
+  <div class="hero-content">
+    <p class="hero-eyebrow"><em class="star">★</em> Edmonton-based · Open to Travel</p>
+    <h1 class="hero-headline" aria-label="Every can tells a story">
+      <span class="hero-word hero-word--a">EVERY CAN</span>
+      <span class="hero-word hero-word--b">TELLS</span>
+      <span class="hero-word hero-word--c">A STORY.</span>
+    </h1>
+    <hr class="hero-rule" aria-hidden="true">
+    <p class="hero-body">Our projects span from intimate to large weddings, birthdays, corporate events, and intentional partnerships. We love adding personal touches.</p>
+  </div>
+</section>
+
+<!-- EVENTS GRID -->
+<section class="events" data-section="event-types" data-intent="portfolio" data-layout="grid" data-items="4" data-media="image">
+  <div class="events-header">
+    <h2 class="events-heading">Every event, its own can.</h2>
+  </div>
+  <div class="events-grid">
+
+    <article class="event-card" data-event-type="his-hers">
+      <div class="event-card-img" aria-label="His and Hers cocktail cans">
+        <img class="event-card-photo" src="/assets/images/can-hers.jpg" alt="Lime Margarita with fresh lime wedge and jalapeño — His and Hers cocktail cans" loading="lazy" width="370" height="436">
+        <div class="event-card-overlay" aria-hidden="true">
+          <p class="event-card-overlay-text">This is your opportunity to let the bride and groom personalities shine through. Add your wedding date, a thank you, QR codes, a touch of comedy — because truly who doesn't need some liquid encouragement to get on the dancefloor?!</p>
+        </div>
+      </div>
+      <div class="event-card-body">
+        <p class="event-card-eyebrow">his &amp; hers</p>
+        <h3 class="event-card-title">His &amp; Hers Cocktails</h3>
+        <p class="event-card-text">Two personalities. One bar. Your love story in a can.</p>
+      </div>
+    </article>
+
+    <article class="event-card" data-event-type="your-recipe">
+      <div class="event-card-img" aria-label="Collab Margarita with Coco's — your recipe our can">
+        <img class="event-card-photo" src="/assets/images/can-mocktail.png" alt="Collab Margarita with Coco's and custom His and Hers cans" loading="lazy" width="378" height="353">
+        <div class="event-card-overlay" aria-hidden="true">
+          <p class="event-card-overlay-text">Name a better way to showcase a new flavour, location, or special event — we're waiting! It's your special potion. Let us make it easy to get into the hands of your clients or guests. We can join you in your kitchen to can fresh on-site!</p>
+        </div>
+      </div>
+      <div class="event-card-body">
+        <p class="event-card-eyebrow">your recipe</p>
+        <h3 class="event-card-title">Your Recipe, Our Can</h3>
+        <p class="event-card-text">Your flavour. Your label. We can it fresh — on-site if you want.</p>
+      </div>
+    </article>
+
+    <article class="event-card" data-event-type="mocktail">
+      <div class="event-card-img" aria-label="Pink slush Alani mocktail can with edible pink glitter">
+        <img class="event-card-photo" src="/assets/images/can-his-hers.png" alt="Pink slush Alani can with edible pink glitter — mocktail for events" loading="lazy" width="328" height="441">
+        <div class="event-card-overlay" aria-hidden="true">
+          <p class="event-card-overlay-text">We love matcha, cold brews, and refreshing sodas over here too!!! Alcohol is not a necessity! Honestly, let's make the kiddos birthday a special event too! Corporate friendly. Our favourites: Blueberry Lavender Lemonade, Spritz, Virgin Mojito &amp; Piña Coladas.</p>
+        </div>
+      </div>
+      <div class="event-card-body">
+        <p class="event-card-eyebrow">mocktails</p>
+        <h3 class="event-card-title">Mocktails</h3>
+        <p class="event-card-text">Alcohol is not a necessity. Every guest gets a can worth talking about.</p>
+      </div>
+    </article>
+
+    <article class="event-card" data-event-type="corporate">
+      <div class="event-card-img" aria-label="Iced Green Tea for Lean In Edmonton — corporate event can">
+        <img class="event-card-photo" src="/assets/images/can-corporate.jpg" alt="Iced Green Tea with fresh lemon — designed for Lean In Edmonton's networking event" loading="lazy" width="328" height="352">
+        <div class="event-card-overlay" aria-hidden="true">
+          <p class="event-card-overlay-text">Your brand, your message, your theme. Mocktail or cocktail. Celebrating a client, an employee, or a special milestone! Cool new option to get your brand actually noticed at a tradeshow, conference, or market.</p>
+        </div>
+      </div>
+      <div class="event-card-body">
+        <p class="event-card-eyebrow">corporate</p>
+        <h3 class="event-card-title">Corporate Events</h3>
+        <p class="event-card-text">Your brand on the can. Zero boring swag. 100% memorable.</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- BOOKING CTA -->
+
+<!-- WATCH IT HAPPEN -->
+<section class="process" data-section="process-video" data-intent="social proof / process" data-layout="full-width">
+  <div class="process-inner">
+    <h2 class="process-heading">Watch it happen.</h2>
+    <div class="process-video-wrap">
+      <video
+        class="process-video"
+        src="/assets/images/process00000000.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        disablepictureinpicture
+        aria-label="Poptop canning machine process video"
+      ></video>
+    </div>
+    <p class="process-tagline">Mobile. On-site. Zero mess.</p>
+  </div>
+</section>
+
+<section class="booking" data-section="cta" data-intent="booking conversion" data-layout="centered" aria-label="Book your Poptop experience">
+  <span class="booking-star" aria-hidden="true">★ ★ ★</span>
+  <h2 class="booking-heading">Want your own?</h2>
+  <p class="booking-sub">Tell us about your event.<br>We'll make it the one they talk about.</p>
+  <a href="/contact/" class="btn">Book Your Experience</a>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer" data-canon>
+  <div class="footer-inner">
+    <a href="/" class="footer-logo" aria-label="Poptop Cocktails home">
+      <img src="/assets/images/logo.png" alt="Poptop Cocktails" width="117" height="35">
+    </a>
+    <ul class="footer-links">
+      <li><a href="/about/">About</a></li>
+      <li><a href="/inspiration/" aria-current="page">Inspiration</a></li>
+      <li><a href="/partners/">Partners</a></li>
+      <li><a href="/faq/">FAQ</a></li>
+      <li><a href="/contact/">Contact</a></li>
+    </ul>
+    <span class="footer-copy">© 2025 Poptop Cocktails Inc. All Rights Reserved.</span>
+    <a href="https://instagram.com/poptop.inc" target="_blank" rel="noopener" class="footer-social">@poptop.inc</a>
+  </div>
+</footer>
+
+</body>
+</html>

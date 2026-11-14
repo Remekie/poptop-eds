@@ -1,0 +1,27 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:migrate",
+    "writtenAt": "2026-05-17T03:30:00Z",
+    "stardustVersion": "0.2.0"
+  },
+  "slug": "inspiration",
+  "outputPath": "inspiration/index.html",
+  "sourcePrototype": "stardust/prototypes/inspiration-proposed.html",
+  "migrationDecisions": [
+    {
+      "type": "template-applied",
+      "note": "listing archetype"
+    },
+    {
+      "type": "metadata-override",
+      "note": "slug remapped from /s-projects-side-by-side to /inspiration"
+    }
+  ],
+  "canonShas": {},
+  "modules": [
+    "inspiration-hero",
+    "event-gallery",
+    "process-video",
+    "booking"
+  ]
+}

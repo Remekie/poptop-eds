@@ -1,0 +1,14 @@
+{
+  "slug": "faq",
+  "outputPath": "faq/index.html",
+  "migrationDecisions": [
+    {
+      "type": "sidecar-added",
+      "note": "missing in source; added for rollout"
+    }
+  ],
+  "canonShas": {},
+  "modules": [
+    "faq"
+  ]
+}

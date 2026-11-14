@@ -1,0 +1,14 @@
+{
+  "slug": "partners",
+  "outputPath": "partners/index.html",
+  "migrationDecisions": [
+    {
+      "type": "sidecar-added",
+      "note": "missing in source; added for rollout"
+    }
+  ],
+  "canonShas": {},
+  "modules": [
+    "partners"
+  ]
+}

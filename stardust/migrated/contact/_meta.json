@@ -1,0 +1,25 @@
+{
+  "_provenance": {
+    "writtenBy": "stardust:migrate",
+    "writtenAt": "2026-05-17T03:30:00Z",
+    "stardustVersion": "0.2.0"
+  },
+  "slug": "contact",
+  "outputPath": "contact/index.html",
+  "sourcePrototype": "stardust/prototypes/contact-proposed.html",
+  "migrationDecisions": [
+    {
+      "type": "template-applied",
+      "note": "form archetype"
+    },
+    {
+      "type": "metadata-override",
+      "note": "nav href /s-projects-side-by-side → /inspiration (clean slug)"
+    }
+  ],
+  "canonShas": {},
+  "modules": [
+    "contact-hero",
+    "contact-form"
+  ]
+}
