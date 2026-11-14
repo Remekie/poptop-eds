@@ -1,0 +1,167 @@
+/* source: main.css § Hero — base shell (about / inspiration / contact) */
+.page-hero {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  min-height: 100svh;
+  overflow: hidden;
+  background: var(--color-can);
+  color: #fff;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to top right,
+    rgb(0 0 0 / 90%) 0%,
+    rgb(0 0 0 / 65%) 28%,
+    rgb(0 0 0 / 22%) 58%,
+    transparent 78%
+  );
+  pointer-events: none;
+}
+
+.page-hero .page-hero-visual {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.page-hero .page-hero-visual p {
+  height: 100%;
+  margin: 0;
+}
+
+.page-hero .page-hero-visual picture,
+.page-hero .page-hero-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 52%;
+}
+
+.page-hero .page-hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  max-width: min(680px, 58vw);
+  margin-left: max(40px, calc((100vw - var(--max-width)) / 2));
+  padding: clamp(120px, 20vh, 240px) 60px 88px 0;
+}
+
+.page-hero .page-hero-eyebrow p {
+  margin: 0 0 24px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgb(255 255 255 / 55%);
+}
+
+.page-hero .page-hero-headline :is(h1, h2) {
+  margin: 0;
+  font-family: var(--heading-font-family);
+  font-weight: 800;
+  line-height: 0.88;
+  color: #fff;
+}
+
+.page-hero .page-hero-headline br {
+  display: none;
+}
+
+.page-hero .page-hero-line {
+  display: block;
+}
+
+.page-hero .page-hero-line-lead {
+  margin-bottom: 0.05em;
+  font-size: clamp(26px, 3.2vw, 44px);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: rgb(255 255 255 / 55%);
+}
+
+.page-hero .page-hero-line-main {
+  font-size: clamp(72px, 10vw, 136px);
+  letter-spacing: -0.045em;
+  line-height: 0.82;
+}
+
+.page-hero .page-hero-line-accent {
+  margin-top: 0.06em;
+  font-size: clamp(44px, 6vw, 82px);
+  letter-spacing: -0.03em;
+  line-height: 0.9;
+  color: var(--color-pour);
+}
+
+.page-hero .page-hero-body {
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 2px solid rgb(255 255 255 / 22%);
+}
+
+.page-hero .page-hero-body p {
+  max-width: 480px;
+  margin: 0 0 36px;
+  font-size: var(--body-sm);
+  line-height: var(--line-height-body);
+  color: rgb(255 255 255 / 75%);
+}
+
+.page-hero .page-hero-body p.button-wrapper {
+  margin: 0;
+}
+
+@media (width <= 1240px) {
+  .page-hero .page-hero-content {
+    margin-left: 40px;
+  }
+}
+
+@media (width <= 900px) {
+  .page-hero .page-hero-content {
+    max-width: 100%;
+    margin-left: 0;
+    padding: clamp(100px, 18vh, 180px) 32px 72px;
+  }
+
+  .page-hero::before {
+    background: linear-gradient(
+      to bottom,
+      rgb(0 0 0 / 86%) 0%,
+      rgb(0 0 0 / 62%) 42%,
+      rgb(0 0 0 / 30%) 72%,
+      rgb(0 0 0 / 48%) 100%
+    );
+  }
+}
+
+@media (width <= 600px) {
+  .page-hero {
+    min-height: 84svh;
+  }
+
+  .page-hero .page-hero-content {
+    padding: 72px 24px 56px;
+  }
+
+  .page-hero .page-hero-eyebrow p {
+    margin-bottom: 16px;
+  }
+
+  .page-hero .page-hero-line-lead { font-size: clamp(19px, 5.2vw, 26px); }
+
+  .page-hero .page-hero-line-main {
+    font-size: clamp(44px, 14.5vw, 72px);
+    letter-spacing: -0.035em;
+  }
+
+  .page-hero .page-hero-line-accent { font-size: clamp(28px, 9vw, 44px); }
+}

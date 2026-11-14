@@ -16,3 +16,10 @@
 
 Section heads (eyebrow/H2/lede above a grid) are default content before the block (ENCODE: section heads).
 Card variant budget: 4 (D6/D9 ceiling).
+
+## Triage updates (about, 2026-11-14)
+- events-we-serve → default content, style `list` (heading + plain list; no structure a block adds).
+- booking band on about is light → style `cta-light`; faq / inspiration / partners use dark `cta`.
+- D1 advisories justified: `page-hero` = bespoke full-bleed photo hero with a three-size headline;
+  `cards numbered` = repeating units (3 tiles); `quote` = Block Collection quote pattern (D11).
+- No favicon on the source (`/favicon.ico` 404, no `<link rel=icon>`): boilerplate icon ships until the owner supplies one.

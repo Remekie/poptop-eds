@@ -1,27 +1,80 @@
 .cards > ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
   gap: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
-}
-
-.cards .cards-card-body {
-  margin: 16px;
+.cards .cards-card-image p,
+.cards .cards-card-body p {
+  margin: 0;
 }
 
 .cards .cards-card-image {
   line-height: 0;
 }
 
-.cards > ul > li img {
+.cards .cards-card-image img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
+}
+
+/* numbered (about services, home process): dark tiles, 3 across, 2px gutters */
+main .section:has(.cards.numbered) {
+  background: var(--color-can);
+  color: var(--color-label);
+}
+
+main .section:has(.cards.numbered) .default-content-wrapper h2 {
+  max-width: 640px;
+  margin-bottom: 64px;
+  font-size: var(--heading-xl);
+  letter-spacing: -0.025em;
+  color: var(--color-label);
+}
+
+.cards.numbered > ul {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2px;
+}
+
+.cards.numbered > ul > li {
+  padding: 40px 32px;
+  background: #141414;
+}
+
+.cards.numbered .cards-card-body :is(h2, h3) {
+  margin-bottom: 16px;
+  font-size: var(--heading-md);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  color: var(--color-label);
+}
+
+.cards.numbered .cards-card-body p {
+  font-size: var(--body-sm);
+  line-height: var(--line-height-body);
+  color: var(--color-label);
+  opacity: 0.6;
+}
+
+.cards.numbered .cards-card-eyebrow p {
+  margin-bottom: 20px;
+  font-family: var(--heading-font-family);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-pour);
+  opacity: 1;
+}
+
+@media (width <= 768px) {
+  .cards.numbered > ul {
+    grid-template-columns: 1fr;
+  }
 }

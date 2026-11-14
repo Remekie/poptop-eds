@@ -383,6 +383,77 @@ main .section.cta .button-wrapper {
   margin-top: 32px;
 }
 
+/* section metadata: cta-light (booking band on a light ground, about) */
+main .section.cta-light {
+  border-top: 1px solid var(--color-rim);
+  text-align: center;
+}
+
+main .section.cta-light .default-content-wrapper {
+  max-width: 760px;
+}
+
+main .section.cta-light h2 {
+  margin-bottom: 12px;
+  font-size: var(--heading-xl);
+  letter-spacing: -0.025em;
+}
+
+main .section.cta-light p {
+  opacity: 0.6;
+}
+
+main .section.cta-light .button-wrapper {
+  margin-top: 40px;
+  opacity: 1;
+}
+
+/* section metadata: list (heading beside a starred list, about) */
+main .section.list .default-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+main .section.list h2 {
+  font-size: var(--heading-xl);
+  letter-spacing: -0.025em;
+}
+
+main .section.list ul {
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--color-rim);
+  list-style: none;
+}
+
+main .section.list li {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-rim);
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-md);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+main .section.list li::before {
+  content: '★';
+  flex-shrink: 0;
+  font-size: 14px;
+  color: var(--color-pour);
+}
+
+@media (width <= 768px) {
+  main .section.list .default-content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
 /* section metadata: faq (question / answer pairs) */
 main .section.faq .default-content-wrapper {
   display: grid;

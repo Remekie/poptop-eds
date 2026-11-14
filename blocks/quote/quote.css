@@ -1,0 +1,65 @@
+/* source: about inline § review */
+main .section:has(.quote) {
+  background: var(--color-can);
+  color: var(--color-label);
+  text-align: center;
+}
+
+main .section:has(.quote) > div {
+  max-width: 840px;
+}
+
+.quote figure {
+  margin: 0;
+}
+
+.quote figure::before {
+  content: '★★★★★';
+  display: block;
+  margin-bottom: 40px;
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: var(--color-pour);
+}
+
+.quote blockquote {
+  margin: 0 0 32px;
+}
+
+.quote blockquote p {
+  margin: 0;
+  font-family: var(--heading-font-family);
+  font-size: clamp(22px, 3vw, 36px);
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  color: var(--color-label);
+}
+
+.quote figcaption p {
+  margin: 0;
+  font-size: var(--body-sm);
+  font-weight: 500;
+  color: var(--color-rim);
+}
+
+/* the reviews link authored after the block */
+main .section:has(.quote) .default-content-wrapper {
+  margin-top: 48px;
+}
+
+main .section:has(.quote) .default-content-wrapper a:any-link {
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--color-pour);
+  font-size: var(--body-sm);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-pour);
+  transition: opacity 80ms;
+}
+
+main .section:has(.quote) .default-content-wrapper a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
