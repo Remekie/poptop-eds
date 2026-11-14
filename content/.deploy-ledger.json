@@ -25,5 +25,14 @@
     "preview": 200,
     "live": 200,
     "verify": "ok"
+  },
+  "/about/index": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-11-14T23:05:02.297Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
   }
 }

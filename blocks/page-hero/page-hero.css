@@ -51,7 +51,7 @@
   flex-direction: column;
   max-width: min(680px, 58vw);
   margin-left: max(40px, calc((100vw - var(--max-width)) / 2));
-  padding: clamp(120px, 20vh, 240px) 60px 88px 0;
+  padding: clamp(120px, 20vh, 240px) 60px 88px;
 }
 
 .page-hero .page-hero-eyebrow p {
@@ -102,9 +102,7 @@
 }
 
 .page-hero .page-hero-body {
-  margin-top: 32px;
-  padding-top: 32px;
-  border-top: 2px solid rgb(255 255 255 / 22%);
+  margin-top: 12px;
 }
 
 .page-hero .page-hero-body p {

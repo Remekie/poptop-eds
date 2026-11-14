@@ -28,7 +28,7 @@
 .columns .columns-img-col img {
   display: block;
   width: 100%;
-  aspect-ratio: 2 / 3;
+  aspect-ratio: 420 / 425;
   object-fit: cover;
 }
 
