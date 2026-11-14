@@ -4,3 +4,8 @@
 {"t":"2026-11-14T23:04:31.744Z","path":"/about\\index","step":"preview","status":404,"text":" [x-error: [admin] Unable to fetch '/about-index.md' from 'html2md': (404) - resource not found: https://content.da.live/remekie/poptop-eds/about-index]","attempts":1}
 {"t":"2026-11-14T23:05:08.379Z","path":"/about/index","step":"verify","ok":true}
 {"t":"2026-11-14T23:08:27.822Z","path":"/about/index","step":"verify","ok":true}
+{"t":"2026-11-14T23:29:42.405Z","path":"/faq/index","step":"verify","ok":true}
+{"t":"2026-11-14T23:29:42.539Z","path":"/index","step":"verify","ok":true}
+{"t":"2026-11-14T23:29:42.704Z","path":"/contact/index","step":"verify","ok":true}
+{"t":"2026-11-14T23:29:48.203Z","path":"/inspiration/index","step":"verify","ok":true}
+{"t":"2026-11-14T23:29:48.354Z","path":"/partners/index","step":"verify","ok":true}

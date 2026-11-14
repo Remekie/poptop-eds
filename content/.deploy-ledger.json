@@ -34,5 +34,50 @@
     "preview": 200,
     "live": 200,
     "verify": "ok"
+  },
+  "/contact/index": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-11-14T23:29:36.280Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/faq/index": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-11-14T23:29:36.281Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/index": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-11-14T23:29:36.281Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/inspiration/index": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-11-14T23:29:42.406Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
+  },
+  "/partners/index": {
+    "status": "live",
+    "attempts": 1,
+    "ts": "2026-11-14T23:29:42.541Z",
+    "put": 201,
+    "preview": 200,
+    "live": 200,
+    "verify": "ok"
   }
 }

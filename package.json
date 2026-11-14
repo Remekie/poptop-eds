@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/adobe/aem-boilerplate#readme",
   "devDependencies": {
-    "@babel/core": "^8.1.2",
+    "@babel/core": "^7.29.13",
     "@babel/eslint-parser": "7.29.13",
     "cheerio": "^1.2.0",
     "eslint": "8.57.1",
