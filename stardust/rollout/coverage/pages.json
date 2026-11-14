@@ -7,7 +7,7 @@
     ],
     "stardustVersion": "0.38.6"
   },
-  "generatedAt": "2026-11-14T23:10:17.812Z",
+  "generatedAt": "2026-11-14T23:35:15.904Z",
   "pages": [
     {
       "slug": "about",
@@ -58,9 +58,9 @@
       ],
       "widgets": [],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--poptop-eds--remekie.aem.live/contact/",
+        "deployedAt": "2026-11-14T23:35:15.161Z",
         "verifiedAt": null,
         "error": null
       }
@@ -85,9 +85,9 @@
       ],
       "widgets": [],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--poptop-eds--remekie.aem.live/faq/",
+        "deployedAt": "2026-11-14T23:35:15.332Z",
         "verifiedAt": null,
         "error": null
       }
@@ -113,9 +113,9 @@
       ],
       "widgets": [],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--poptop-eds--remekie.aem.live/",
+        "deployedAt": "2026-11-14T23:35:15.904Z",
         "verifiedAt": null,
         "error": null
       }
@@ -141,9 +141,9 @@
       ],
       "widgets": [],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--poptop-eds--remekie.aem.live/inspiration/",
+        "deployedAt": "2026-11-14T23:35:15.529Z",
         "verifiedAt": null,
         "error": null
       }
@@ -168,9 +168,9 @@
       ],
       "widgets": [],
       "delivery": {
-        "status": "pending",
-        "deployedUrl": null,
-        "deployedAt": null,
+        "status": "deployed",
+        "deployedUrl": "https://main--poptop-eds--remekie.aem.live/partners/",
+        "deployedAt": "2026-11-14T23:35:15.712Z",
         "verifiedAt": null,
         "error": null
       }

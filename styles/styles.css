@@ -569,6 +569,7 @@ main .section.cta-split p:has(picture) strong {
 
 main .section.cta-split p:has(+ h2) {
   grid-row: 2;
+  margin-top: 64px;
   margin-bottom: 16px;
   font-size: 12px;
   font-weight: 600;

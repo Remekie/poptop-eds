@@ -16,20 +16,20 @@
   },
   "scope": null,
   "lastRun": {
-    "at": "2026-11-14T23:10:17.812Z",
+    "at": "2026-11-14T23:35:15.904Z",
     "pages": {
       "total": 6,
       "verified": 0,
-      "deployed": 1,
-      "pending": 5,
+      "deployed": 6,
+      "pending": 0,
       "contentPending": 0,
       "stale": 0,
       "failed": 0
     },
     "blocks": {
       "total": 11,
-      "converted": 8,
-      "pending": 3
+      "converted": 11,
+      "pending": 0
     },
     "verifyFailures": 0
   }

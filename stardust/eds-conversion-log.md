@@ -23,3 +23,12 @@ Card variant budget: 4 (D6/D9 ceiling).
 - D1 advisories justified: `page-hero` = bespoke full-bleed photo hero with a three-size headline;
   `cards numbered` = repeating units (3 tiles); `quote` = Block Collection quote pattern (D11).
 - No favicon on the source (`/favicon.ico` 404, no `<link rel=icon>`): boilerplate icon ships until the owner supplies one.
+
+## Triage updates (remaining pages, 2026-11-14)
+- contact: info is default content beside the `form` block (no `columns`: D2 forbids a block inside a block).
+- faq: Q/A pairs are a `faq` block (D5: one row per Q/A), not a section style.
+- home closing section: default content + `form compact` in a `cta-split` section; photo badge = bold text in the photo paragraph.
+- home event-card and closing photos were hotlinked from static.wixstatic.com: downloaded at 2x and hosted in DA.
+- Formspree submission field names now equal the authored labels; two contact fields changed name
+  ("Referral Source" → "How did you hear about Poptop?", "About Your Event" → "Tell us about your event").
+- Not carried over (adjust when live): inspiration CTA's decorative "★ ★ ★"; marquee scrolls one copy (not a seamless loop).
