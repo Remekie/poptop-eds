@@ -226,6 +226,11 @@ a:hover {
   text-transform: uppercase;
 }
 
+/* the ★ glyph authored as <em> in eyebrows stays upright (source .star) */
+:is(.page-hero-eyebrow, .columns-eyebrow, .cards-card-eyebrow, .eyebrow) em {
+  font-style: normal;
+}
+
 /* buttons: square, pour-orange (source .btn) */
 p.button-wrapper {
   margin: 12px 0;

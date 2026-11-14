@@ -14,7 +14,7 @@ main .section:has(.quote) > div {
 }
 
 .quote figure::before {
-  content: '★★★★★';
+  content: '★★★★★' / 'Five stars';
   display: block;
   margin-bottom: 40px;
   font-size: 20px;
