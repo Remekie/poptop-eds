@@ -24,7 +24,7 @@
   "canonShas": {},
   "modules": [
     "header",
-    "hero",
+    "page-hero",
     "columns",
     "form",
     "footer"

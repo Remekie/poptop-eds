@@ -14,7 +14,7 @@
   "canonShas": {},
   "modules": [
     "header",
-    "hero",
+    "page-hero",
     "faq",
     "cta",
     "footer"

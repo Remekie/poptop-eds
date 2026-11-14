@@ -1,13 +1,13 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-11-14T22:42:58.421Z",
+    "writtenAt": "2026-11-14T22:50:48.437Z",
     "readArtifacts": [
       "stardust/migrated"
     ],
     "stardustVersion": "0.38.6"
   },
-  "generatedAt": "2026-11-14T22:42:58.421Z",
+  "generatedAt": "2026-11-14T22:50:48.437Z",
   "pages": [
     {
       "slug": "about",
@@ -22,7 +22,7 @@
       },
       "blocks": [
         "header",
-        "hero",
+        "page-hero",
         "columns",
         "cards",
         "quote",
@@ -51,7 +51,7 @@
       },
       "blocks": [
         "header",
-        "hero",
+        "page-hero",
         "columns",
         "form",
         "footer"
@@ -78,7 +78,7 @@
       },
       "blocks": [
         "header",
-        "hero",
+        "page-hero",
         "faq",
         "cta",
         "footer"
@@ -133,7 +133,7 @@
       },
       "blocks": [
         "header",
-        "hero",
+        "page-hero",
         "cards",
         "video",
         "cta",
@@ -161,7 +161,7 @@
       },
       "blocks": [
         "header",
-        "hero",
+        "page-hero",
         "cards",
         "cta",
         "footer"

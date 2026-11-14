@@ -1,0 +1,10 @@
+{
+  "runtime": "vanilla-eds",
+  "blockWrapperClass": "block",
+  "buttonClasses": ".button / .button.primary / .button.secondary / .button.accent, in p.button-wrapper",
+  "buttonization": "formatted-only",
+  "fragmentScriptPolicy": "inert-innerHTML",
+  "emptySectionCollapse": true,
+  "delayedPhase": "consent-check.js -> consented.js",
+  "probedFrom": "scripts/scripts.js decorateButtons L110-140, scripts/aem.js decorateBlock L572-582"
+}

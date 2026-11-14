@@ -1,13 +1,13 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/blocks",
-    "writtenAt": "2026-11-14T22:42:58.550Z",
+    "writtenAt": "2026-11-14T22:50:48.585Z",
     "readArtifacts": [
       "stardust\\rollout\\coverage\\pages.json"
     ],
     "stardustVersion": "0.38.6"
   },
-  "generatedAt": "2026-11-14T22:42:58.550Z",
+  "generatedAt": "2026-11-14T22:50:48.895Z",
   "blocks": [
     {
       "id": "cards",
@@ -68,7 +68,7 @@
         "status": "converted",
         "edsBlockName": "default-content",
         "blockPath": null,
-        "convertedAt": "2026-11-14T22:42:42.940Z"
+        "convertedAt": "2026-11-14T22:50:48.747Z"
       }
     },
     {
@@ -86,7 +86,7 @@
         "status": "converted",
         "edsBlockName": "default-content",
         "blockPath": null,
-        "convertedAt": "2026-11-14T22:42:43.111Z"
+        "convertedAt": "2026-11-14T22:50:48.895Z"
       }
     },
     {
@@ -162,17 +162,34 @@
       "source": null,
       "usedByTemplates": [],
       "usedByPages": [
-        "about",
-        "contact",
-        "faq",
-        "home",
-        "inspiration",
-        "partners"
+        "home"
       ],
-      "instanceCount": 6,
+      "instanceCount": 1,
       "delivery": {
         "status": "pending",
         "edsBlockName": "hero",
+        "blockPath": null,
+        "convertedAt": null
+      }
+    },
+    {
+      "id": "page-hero",
+      "label": "page-hero",
+      "kind": "module",
+      "signature": "module:page-hero",
+      "source": null,
+      "usedByTemplates": [],
+      "usedByPages": [
+        "about",
+        "contact",
+        "faq",
+        "inspiration",
+        "partners"
+      ],
+      "instanceCount": 5,
+      "delivery": {
+        "status": "pending",
+        "edsBlockName": "page-hero",
         "blockPath": null,
         "convertedAt": null
       }

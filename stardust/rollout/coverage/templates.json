@@ -1,13 +1,13 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/inventory",
-    "writtenAt": "2026-11-14T22:42:58.421Z",
+    "writtenAt": "2026-11-14T22:50:48.437Z",
     "readArtifacts": [
       "stardust/migrated"
     ],
     "stardustVersion": "0.38.6"
   },
-  "generatedAt": "2026-11-14T22:42:58.421Z",
+  "generatedAt": "2026-11-14T22:50:48.895Z",
   "templates": [
     {
       "id": "untyped",
@@ -30,6 +30,7 @@
         "form",
         "header",
         "hero",
+        "page-hero",
         "quote",
         "video"
       ],

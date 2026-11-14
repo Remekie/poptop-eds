@@ -1,13 +1,13 @@
 {
   "_provenance": {
     "writtenBy": "stardust:rollout/plan",
-    "writtenAt": "2026-11-14T22:42:58.708Z",
+    "writtenAt": "2026-11-14T22:50:49.039Z",
     "readArtifacts": [
       "stardust\\rollout\\coverage"
     ],
     "stardustVersion": "0.38.6"
   },
-  "generatedAt": "2026-11-14T22:42:58.708Z",
+  "generatedAt": "2026-11-14T22:50:49.039Z",
   "fragments": [
     {
       "id": "footer",
@@ -37,8 +37,8 @@
       "isRepresentative": true,
       "convert": [
         {
-          "id": "hero",
-          "edsBlockName": "hero"
+          "id": "page-hero",
+          "edsBlockName": "page-hero"
         },
         {
           "id": "columns",
@@ -73,8 +73,8 @@
       ],
       "reuse": [
         {
-          "id": "hero",
-          "edsBlockName": "hero",
+          "id": "page-hero",
+          "edsBlockName": "page-hero",
           "convertedBy": "about"
         },
         {
@@ -98,8 +98,8 @@
       ],
       "reuse": [
         {
-          "id": "hero",
-          "edsBlockName": "hero",
+          "id": "page-hero",
+          "edsBlockName": "page-hero",
           "convertedBy": "about"
         },
         {
@@ -114,14 +114,14 @@
       "path": "/",
       "templateId": null,
       "status": "pending",
-      "isRepresentative": false,
-      "convert": [],
-      "reuse": [
+      "isRepresentative": true,
+      "convert": [
         {
           "id": "hero",
-          "edsBlockName": "hero",
-          "convertedBy": "about"
-        },
+          "edsBlockName": "hero"
+        }
+      ],
+      "reuse": [
         {
           "id": "cards",
           "edsBlockName": "cards",
@@ -153,8 +153,8 @@
       ],
       "reuse": [
         {
-          "id": "hero",
-          "edsBlockName": "hero",
+          "id": "page-hero",
+          "edsBlockName": "page-hero",
           "convertedBy": "about"
         },
         {
@@ -178,8 +178,8 @@
       "convert": [],
       "reuse": [
         {
-          "id": "hero",
-          "edsBlockName": "hero",
+          "id": "page-hero",
+          "edsBlockName": "page-hero",
           "convertedBy": "about"
         },
         {

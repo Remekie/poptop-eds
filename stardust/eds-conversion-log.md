@@ -1,0 +1,18 @@
+# EDS conversion log — poptop
+
+## Locked block names (owner-confirmed 2026-11-14)
+| Unit | Kind | Tier | Used on | Notes |
+|---|---|---|---|---|
+| hero | block (bespoke) | template-slotted | home | bg media + animated headline words (CSS, reduced-motion safe) |
+| page-hero | block | template-slotted | about, contact, faq, inspiration, partners | eyebrow + H1 + lede + image |
+| cards | block (collection) | reconstructive | home, about, inspiration, partners | variants: overlay (home events), image (inspiration gallery), numbered (about services, home how-it-works), compact (partners) |
+| columns | block (collection) | reconstructive | about (origin, events-we-serve), contact (info) | |
+| quote | block (collection) | template-slotted | about (review) | |
+| form | block | reconstructive | contact, home closing CTA | field rows authored; submits to Formspree `xnjrkdnj` (config row); variant compact on home |
+| video | block via auto-block | — | inspiration | authored as a root-relative mp4 link (D1, #161); buildAutoBlocks wraps it |
+| cta | default content | — | home, about, faq, inspiration, partners | Section Metadata `style: cta`; button = `<strong><a>` |
+| faq | default content | — | faq | Section Metadata `style: faq`; h3 + p pairs |
+| header / footer | chrome | — | all | `/nav`, `/footer` documents, `Robots: noindex` |
+
+Section heads (eyebrow/H2/lede above a grid) are default content before the block (ENCODE: section heads).
+Card variant budget: 4 (D6/D9 ceiling).
