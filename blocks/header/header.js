@@ -2,7 +2,7 @@ import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
 // media query match that indicates mobile/tablet width
-const isDesktop = window.matchMedia('(min-width: 900px)');
+const isDesktop = window.matchMedia('(min-width: 769px)');
 
 /**
  * Closes the open nav dropdown (desktop) or the nav menu (mobile) on Escape
@@ -112,8 +112,15 @@ export default async function decorate(block) {
   const brandLink = navBrand.querySelector('.button');
   if (brandLink) {
     brandLink.className = '';
-    brandLink.closest('.button-container').className = '';
+    brandLink.closest('.button-wrapper').className = '';
   }
+
+  // mark the link to the current page
+  const here = window.location.pathname.replace(/\/$/, '') || '/';
+  nav.querySelectorAll('.nav-sections a[href]').forEach((a) => {
+    const path = new URL(a.href, window.location).pathname.replace(/\/$/, '') || '/';
+    if (path === here) a.setAttribute('aria-current', 'page');
+  });
 
   const navSections = nav.querySelector('.nav-sections');
   if (navSections) {

@@ -1,20 +1,171 @@
+/* source: main.css § Footer (simple), home.css § Footer (rich) */
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background: var(--color-can);
+  border-top: 1px solid rgb(255 255 255 / 8%);
+  color: var(--color-rim);
+  font-family: var(--body-font-family);
 }
 
-footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
-}
-
-footer .footer p {
+footer .footer p,
+footer .footer ul {
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+footer .footer a:any-link {
+  color: inherit;
+}
+
+footer .footer a:hover {
+  text-decoration: none;
+}
+
+footer .footer img {
+  display: block;
+  width: auto;
+  height: 32px;
+  filter: invert(1);
+}
+
+/* simple: logo · links · copyright · handle in one row */
+footer .footer-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 40px var(--gutter);
+}
+
+footer .footer:not(.footer-rich) .default-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+footer .footer:not(.footer-rich) ul {
+  display: flex;
+  gap: 24px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+footer .footer:not(.footer-rich) ul a:any-link,
+footer .footer:not(.footer-rich) p a:any-link {
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.65;
+  transition: opacity 80ms;
+}
+
+footer .footer:not(.footer-rich) ul a:hover,
+footer .footer:not(.footer-rich) p a:hover {
+  opacity: 1;
+}
+
+footer .footer:not(.footer-rich) p {
+  font-size: 12px;
+}
+
+@media (width <= 640px) {
+  footer .footer:not(.footer-rich) .default-content-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .footer:not(.footer-rich) ul {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* rich (home): brand + link groups, then a bottom line */
+footer .footer.footer-rich .footer-inner {
+  max-width: 1400px;
+  padding: 56px 56px 40px;
+}
+
+footer .footer.footer-rich .footer-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+footer .footer.footer-rich .footer-brand img {
+  height: 35px;
+  margin-bottom: 16px;
+}
+
+footer .footer.footer-rich .footer-brand p {
+  max-width: 280px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgb(252 252 252 / 50%);
+}
+
+footer .footer.footer-rich .footer-group h2 {
+  margin-bottom: 16px;
+  font-family: var(--heading-font-family);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-pour);
+}
+
+footer .footer.footer-rich .footer-group ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer .footer.footer-rich .footer-group a:any-link {
+  font-size: 14px;
+  color: rgb(252 252 252 / 55%);
+  transition: color 150ms;
+}
+
+footer .footer.footer-rich .footer-group a:hover {
+  color: var(--color-label);
+}
+
+footer .footer.footer-rich .footer-bottom .default-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 32px;
+  border-top: 1px solid rgb(255 255 255 / 8%);
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: rgb(252 252 252 / 35%);
+}
+
+footer .footer.footer-rich .footer-bottom a:any-link {
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  transition: color 150ms;
+}
+
+footer .footer.footer-rich .footer-bottom a:hover {
+  color: var(--color-pour);
+}
+
+@media (width <= 768px) {
+  footer .footer.footer-rich .footer-inner {
+    padding: 48px 24px 32px;
+  }
+
+  footer .footer.footer-rich .footer-top {
+    flex-direction: column;
+  }
+
+  footer .footer.footer-rich .footer-bottom .default-content-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
   }
 }

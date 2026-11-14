@@ -1,0 +1,151 @@
+{
+  "media/poptop/IMG_3535.JPG": {
+    "status": "uploaded",
+    "file": "stardust/migrated/assets/images/IMG_3535.JPG",
+    "size": 396161,
+    "sha256": "72742c94a49ef638019cb9acc85fa5eb0812566b31e5e2aa65275f43a6227c07",
+    "contentType": "image/jpeg",
+    "source": null,
+    "contentUrl": "https://content.da.live/remekie/poptop-eds/media/poptop/IMG_3535.JPG",
+    "httpStatus": 201,
+    "attempts": 1,
+    "ts": "2026-11-14T22:59:32.863Z"
+  },
+  "media/poptop/can-corporate.jpg": {
+    "status": "uploaded",
+    "file": "stardust/migrated/assets/images/can-corporate.jpg",
+    "size": 23134,
+    "sha256": "d19cc6840e170fb56812902a6a6248f272d3ad55f8ae6f337bab9d45a4a89992",
+    "contentType": "image/jpeg",
+    "source": null,
+    "contentUrl": "https://content.da.live/remekie/poptop-eds/media/poptop/can-corporate.jpg",
+    "httpStatus": 201,
+    "attempts": 1,
+    "ts": "2026-11-14T22:59:33.484Z"
+  },
+  "media/poptop/about-hero_cropped.jpg": {
+    "status": "uploaded",
+    "file": "stardust/migrated/assets/images/about-hero_cropped.jpg",
+    "size": 47313,
+    "sha256": "52214b2a20a44c940f47934a3bd847d11d50cfd5e1362c30de8f7d8643308804",
+    "contentType": "image/jpeg",
+    "source": null,
+    "contentUrl": "https://content.da.live/remekie/poptop-eds/media/poptop/about-hero_cropped.jpg",
+    "httpStatus": 201,
+    "attempts": 1,
+    "ts": "2026-11-14T22:59:33.488Z"
+  },
+  "media/poptop/can-hers.jpg": {
+    "status": "uploaded",
+    "file": "stardust/migrated/assets/images/can-hers.jpg",
+    "size": 33215,
+    "sha256": "e51ae5691a532f2bdcab7dff32a37a0bb1919b059b5d2be0edde38231d0035ee",
+    "contentType": "image/jpeg",
+    "source": null,
+    "contentUrl": "https://content.da.live/remekie/poptop-eds/media/poptop/can-hers.jpg",
+    "httpStatus": 201,
+    "attempts": 1,
+    "ts": "2026-11-14T22:59:33.491Z"
+  },
+  "media/poptop/can-his-hers.png": {
+    "status": "uploaded",
+    "file": "stardust/migrated/assets/images/can-his-hers.png",
+    "size": 215514,
+    "sha256": "8ab2894fcfc5293d5b5129404ff2ec901082f63dc4f8230342344e959616c9ef",
+    "contentType": "image/png",
+    "source": null,
+    "contentUrl": "https://content.da.live/remekie/poptop-eds/media/poptop/can-his-hers.png",
+    "httpStatus": 201,
+    "attempts": 1,
+    "ts": "2026-11-14T22:59:33.597Z"
+  },
+  "media/poptop/logo.png": {
+    "status": "uploaded",
+    "file": "stardust/migrated/assets/images/logo.png",
+    "size": 20848,
+    "sha256": "187538b726738a787058ade28031b0dd01bba6b0d64121b8fb81f98cd33dcf8f",
+    "contentType": "image/png",
+    "source": null,
+    "contentUrl": "https://content.da.live/remekie/poptop-eds/media/poptop/logo.png",
+    "httpStatus": 201,
+    "attempts": 1,
+    "ts": "2026-11-14T22:59:34.178Z"
+  },
+  "media/poptop/faq-hero.jpg": {
+    "status": "uploaded",
+    "file": "stardust/migrated/assets/images/faq-hero.jpg",
+    "size": 298344,
+    "sha256": "0f41e0449e89c742bae5ae3abdf96aa2297436e3421fa8387253f843af373ff4",
+    "contentType": "image/jpeg",
+    "source": null,
+    "contentUrl": "https://content.da.live/remekie/poptop-eds/media/poptop/faq-hero.jpg",
+    "httpStatus": 201,
+    "attempts": 1,
+    "ts": "2026-11-14T22:59:34.187Z"
+  },
+  "media/poptop/can-mocktail.png": {
+    "status": "uploaded",
+    "file": "stardust/migrated/assets/images/can-mocktail.png",
+    "size": 282898,
+    "sha256": "dc63dc6d0a09ed3c18f3f09d97c618b38a5eddca823a68b5ffc2be114c11e8c6",
+    "contentType": "image/png",
+    "source": null,
+    "contentUrl": "https://content.da.live/remekie/poptop-eds/media/poptop/can-mocktail.png",
+    "httpStatus": 201,
+    "attempts": 1,
+    "ts": "2026-11-14T22:59:34.345Z"
+  },
+  "media/poptop/hero-opt.jpg": {
+    "status": "uploaded",
+    "file": "stardust/migrated/assets/images/hero-opt.jpg",
+    "size": 138659,
+    "sha256": "5e1aee929387a44faf6c4f81a588bc541f121db5a80cd310148a5bc381e4b214",
+    "contentType": "image/jpeg",
+    "source": null,
+    "contentUrl": "https://content.da.live/remekie/poptop-eds/media/poptop/hero-opt.jpg",
+    "httpStatus": 201,
+    "attempts": 1,
+    "ts": "2026-11-14T22:59:34.351Z"
+  },
+  "media/poptop/partner-logos-collage.jpg": {
+    "status": "uploaded",
+    "file": "stardust/migrated/assets/images/partner-logos-collage.jpg",
+    "size": 66467,
+    "sha256": "aeae68ddd277f3d4559a1f9dd61399cda5653ffa71485c4df9175876d68abe3b",
+    "contentType": "image/jpeg",
+    "source": null,
+    "contentUrl": "https://content.da.live/remekie/poptop-eds/media/poptop/partner-logos-collage.jpg",
+    "httpStatus": 201,
+    "attempts": 1,
+    "ts": "2026-11-14T22:59:34.954Z"
+  },
+  "media/poptop/partner-hero.png": {
+    "status": "uploaded",
+    "file": "stardust/migrated/assets/images/partner-hero.png",
+    "size": 3305204,
+    "sha256": "b93ab32eba1e5b1d53304dcd228b4172d71e4a55d69455b3bccae8ed6d499f6b",
+    "contentType": "image/png",
+    "source": null,
+    "contentUrl": "https://content.da.live/remekie/poptop-eds/media/poptop/partner-hero.png",
+    "httpStatus": 201,
+    "attempts": 1,
+    "ts": "2026-11-14T22:59:35.423Z"
+  },
+  "media/poptop/process00000000.mp4": {
+    "status": "uploaded",
+    "file": "stardust/migrated/assets/images/process00000000.mp4",
+    "size": 939357,
+    "sha256": "7fbe433911e61f8c8b810ad367e5cbb4920497e2b771cec8be1e098aa70cbd13",
+    "contentType": "video/mp4",
+    "source": null,
+    "contentUrl": "https://content.da.live/remekie/poptop-eds/media/poptop/process00000000.mp4",
+    "httpStatus": 201,
+    "attempts": 1,
+    "ts": "2026-11-14T22:59:35.407Z",
+    "authorUrl": "/media/poptop/process00000000.mp4",
+    "delivered": [
+      "preview",
+      "live"
+    ]
+  }
+}

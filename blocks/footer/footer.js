@@ -14,7 +14,26 @@ export default async function decorate(block) {
   // decorate footer DOM
   block.textContent = '';
   const footer = document.createElement('div');
-  while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
+  footer.className = 'footer-inner';
+  // ignore sections emptied by the metadata block (Robots: noindex)
+  const sections = [...fragment.children]
+    .filter((section) => section.textContent.trim() || section.querySelector('img'));
+
+  if (sections.length > 1) {
+    // rich footer: brand, link groups..., bottom line
+    block.classList.add('footer-rich');
+    const top = document.createElement('div');
+    top.className = 'footer-top';
+    const bottom = sections.pop();
+    bottom.classList.add('footer-bottom');
+    sections.forEach((section, i) => {
+      section.classList.add(i === 0 ? 'footer-brand' : 'footer-group');
+      top.append(section);
+    });
+    footer.append(top, bottom);
+  } else {
+    sections.forEach((section) => footer.append(section));
+  }
 
   block.append(footer);
 }
