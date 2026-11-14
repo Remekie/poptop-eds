@@ -251,19 +251,19 @@ main .section.form-container:not(.cta-split) {
   }
 }
 
-main .section.form-container .default-content-wrapper h2 {
+main .section.form-container:not(.cta-split) .default-content-wrapper h2 {
   margin-bottom: 40px;
   font-size: var(--heading-xl);
   letter-spacing: -0.025em;
   color: var(--color-label);
 }
 
-main .section.form-container .default-content-wrapper h2 em {
+main .section.form-container:not(.cta-split) .default-content-wrapper h2 em {
   font-style: normal;
   color: var(--color-pour);
 }
 
-main .section.form-container .default-content-wrapper h3 {
+main .section.form-container:not(.cta-split) .default-content-wrapper h3 {
   margin: 32px 0 6px;
   font-family: var(--body-font-family);
   font-size: 10px;
@@ -273,26 +273,26 @@ main .section.form-container .default-content-wrapper h3 {
   color: var(--color-pour);
 }
 
-main .section.form-container .default-content-wrapper p {
+main .section.form-container:not(.cta-split) .default-content-wrapper p {
   margin: 0;
   font-size: var(--body-sm);
   line-height: 1.6;
   color: rgb(252 252 252 / 80%);
 }
 
-main .section.form-container .default-content-wrapper p a:any-link {
+main .section.form-container:not(.cta-split) .default-content-wrapper p a:any-link {
   color: inherit;
 }
 
 /* the promise: a paragraph led by bold text */
-main .section.form-container .default-content-wrapper p:has(> strong) {
+main .section.form-container:not(.cta-split) .default-content-wrapper p:has(> strong) {
   margin-top: 48px;
   padding-top: 32px;
   border-top: 1px solid rgb(255 255 255 / 10%);
   color: rgb(255 255 255 / 50%);
 }
 
-main .section.form-container .default-content-wrapper p > strong {
+main .section.form-container:not(.cta-split) .default-content-wrapper p > strong {
   display: block;
   margin-bottom: 8px;
   font-family: var(--heading-font-family);
