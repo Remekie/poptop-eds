@@ -211,10 +211,6 @@ async function loadLazy(doc) {
 
   loadCSS(`${window.hlx.codeBasePath}/styles/lazy-styles.css`);
   loadFonts();
-  import('./structured-data.js')
-    .then(({ default: addStructuredData }) => addStructuredData())
-    // eslint-disable-next-line no-console
-    .catch((error) => console.error('Structured data failed', error));
 }
 
 /**
