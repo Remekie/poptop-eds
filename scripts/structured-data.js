@@ -9,8 +9,11 @@ import { getMetadata } from './aem.js';
 const SITE = 'https://www.poptopcocktails.ca';
 const TYPES = ['WebPage', 'AboutPage', 'ContactPage', 'FAQPage', 'CollectionPage'];
 
+// breadcrumb label from the last path segment, matching the nav ("contact" → Contact, "faq" → FAQ)
 function pageName() {
-  return (getMetadata('og:title') || document.title).split(/\s[—|]\s/)[0].trim();
+  const segment = window.location.pathname.split('/').filter(Boolean).pop() || '';
+  const words = segment.split('-');
+  return words.map((w) => (w.length <= 3 ? w.toUpperCase() : w[0].toUpperCase() + w.slice(1))).join(' ');
 }
 
 function faqEntities() {
