@@ -32,3 +32,14 @@ Card variant budget: 4 (D6/D9 ceiling).
 - Formspree submission field names now equal the authored labels; two contact fields changed name
   ("Referral Source" → "How did you hear about Poptop?", "About Your Event" → "Tell us about your event").
 - Not carried over (adjust when live): inspiration CTA's decorative "★ ★ ★"; marquee scrolls one copy (not a seamless loop).
+
+## SEO / GEO (2026-11-14)
+- Site graph (LocalBusiness/FoodEstablishment + WebSite, founders) is static in head.html; logo/image URLs absolute
+  (`/assets/images/*` committed so they resolve on the old and the new origin).
+- Page node + BreadcrumbList per URL: DA bulk metadata sheet `/metadata` (`json-ld` column), server-rendered.
+  Copy of the sheet: stardust/deploy/bulk-metadata.json. Its name/description duplicate the page metadata — update both.
+- Runtime JSON-LD was tried and removed: invisible to non-rendering AI crawlers and scored 53–89% on the AI-readability gate.
+- FAQPage mainEntity omitted: FAQ rich results are restricted to gov/health sites; Q/A text is served HTML.
+- html-lang en-CA, og:locale en_CA via bulk metadata. `twitter:site` omitted (source value was the Instagram handle).
+- AI-readability gate: 100% on all six pages.
+- At cutover: set cdn.prod.host (canonical/og:url), robots.txt with the sitemap line, Search Console + Bing.

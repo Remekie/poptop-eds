@@ -38,7 +38,7 @@
   "/about/index": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-11-15T00:28:51.335Z",
+    "ts": "2026-11-15T00:33:10.851Z",
     "put": 200,
     "preview": 200,
     "live": 200,
@@ -47,7 +47,7 @@
   "/contact/index": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-11-15T00:28:51.336Z",
+    "ts": "2026-11-15T00:33:10.852Z",
     "put": 200,
     "preview": 200,
     "live": 200,
@@ -56,7 +56,7 @@
   "/faq/index": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-11-15T00:28:51.336Z",
+    "ts": "2026-11-15T00:33:10.852Z",
     "put": 200,
     "preview": 200,
     "live": 200,
@@ -65,7 +65,7 @@
   "/inspiration/index": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-11-15T00:28:58.574Z",
+    "ts": "2026-11-15T00:33:17.226Z",
     "put": 200,
     "preview": 200,
     "live": 200,
@@ -74,7 +74,7 @@
   "/partners/index": {
     "status": "live",
     "attempts": 1,
-    "ts": "2026-11-15T00:28:58.575Z",
+    "ts": "2026-11-15T00:33:17.229Z",
     "put": 200,
     "preview": 200,
     "live": 200,
