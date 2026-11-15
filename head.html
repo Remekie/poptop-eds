@@ -7,3 +7,44 @@
 <script nonce="aem" src="/scripts/aem.js" type="module"></script>
 <script nonce="aem" src="/scripts/scripts.js" type="module"></script>
 <link rel="stylesheet" href="/styles/styles.css"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["LocalBusiness", "FoodEstablishment"],
+      "@id": "https://www.poptopcocktails.ca/#business",
+      "name": "Poptop Cocktails",
+      "alternateName": "Poptop Inc",
+      "description": "Custom canned cocktails and mocktails designed, canned, and delivered for weddings, corporate events, birthdays, and brand collabs. Edmonton-based, open to travel & opportunities everywhere.",
+      "url": "https://www.poptopcocktails.ca/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.poptopcocktails.ca/assets/images/logo.png",
+        "width": 234,
+        "height": 69
+      },
+      "image": "https://www.poptopcocktails.ca/assets/images/hero-opt.jpg",
+      "areaServed": [
+        { "@type": "City", "name": "Edmonton", "containedInPlace": { "@type": "AdministrativeArea", "name": "Alberta" } },
+        { "@type": "City", "name": "Calgary", "containedInPlace": { "@type": "AdministrativeArea", "name": "Alberta" } }
+      ],
+      "founder": [
+        { "@type": "Person", "name": "Jayleen", "jobTitle": "Co-founder" },
+        { "@type": "Person", "name": "Ashley", "jobTitle": "Co-founder" }
+      ],
+      "sameAs": ["https://www.instagram.com/poptop.inc"],
+      "priceRange": "$$",
+      "servesCuisine": ["Cocktails", "Mocktails"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.poptopcocktails.ca/#website",
+      "url": "https://www.poptopcocktails.ca/",
+      "name": "Poptop Cocktails",
+      "publisher": { "@id": "https://www.poptopcocktails.ca/#business" },
+      "inLanguage": "en-CA"
+    }
+  ]
+}
+</script>
