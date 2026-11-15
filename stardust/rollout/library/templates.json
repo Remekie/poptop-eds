@@ -1,0 +1,16 @@
+{
+  "total": 2,
+  "limit": 2,
+  "offset": 0,
+  "data": [
+    {
+      "key": "Home page",
+      "value": "https://content.da.live/remekie/poptop-eds/library/templates/home-page"
+    },
+    {
+      "key": "Inner page",
+      "value": "https://content.da.live/remekie/poptop-eds/library/templates/inner-page"
+    }
+  ],
+  ":type": "sheet"
+}
